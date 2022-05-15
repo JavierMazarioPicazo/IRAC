@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+
+	<meta charset="UTF-8">
+	
+	<head>
+		<script src="https://reference.dashif.org/dash.js/latest/dist/dash.all.debug.js"></script>
+		
+		<title>IRAC-PRACTICA3-GRUPO13</title>
+		<h1>Integracion de Redes, Aplicaciones y Contenidos</h1>
+		<h2>Practica 3 - Grupo 13</h2>
+		<h3>Nicolás Conde Bretón, Guillermo Jurado Prieto, José Ignacio Mora Pérez y Javier Mazarío Picazo</h3>
+		<style>
+			title {text-align: center}
+			h1 {text-align: center}
+			h2 {text-align: center}
+			h3 {text-align: center}
+			body {text-align: center}
+			video {width: 640px; height: 360px}
+			div {align-content: center}
+		</style>
+		
+	</head>
+	
+	<body>
+
+ <video class="dashjs-player" autoplay controls preload="auto">
+   <source src="https://dash.akamaized.net/envivio/EnvivioDash3/manifest.mpd" type="application/dash+xml"/>
+</video>
+
+<script>
+var player;
+document.addEventListener("DOMContentLoaded", function () {
+init(); });
+function init(){
+player = dashjs.MediaPlayerFactory.create( document.querySelector(".dashjs-player"));
+ };
+</script>
+
+	</body>
+</html>
